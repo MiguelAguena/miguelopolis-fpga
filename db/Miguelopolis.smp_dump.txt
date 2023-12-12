@@ -1,0 +1,32 @@
+
+State Machine - |routemanager|routemanager_uc:UC|state
+Name state.send_end state.send_route state.send_car state.send_start state.process_route state.send_err state.write_dir state.wait_dir state.write_node state.wait_node state.proc_reset state.waiting 
+state.waiting 0 0 0 0 0 0 0 0 0 0 0 0 
+state.proc_reset 0 0 0 0 0 0 0 0 0 0 1 1 
+state.wait_node 0 0 0 0 0 0 0 0 0 1 0 1 
+state.write_node 0 0 0 0 0 0 0 0 1 0 0 1 
+state.wait_dir 0 0 0 0 0 0 0 1 0 0 0 1 
+state.write_dir 0 0 0 0 0 0 1 0 0 0 0 1 
+state.send_err 0 0 0 0 0 1 0 0 0 0 0 1 
+state.process_route 0 0 0 0 1 0 0 0 0 0 0 1 
+state.send_start 0 0 0 1 0 0 0 0 0 0 0 1 
+state.send_car 0 0 1 0 0 0 0 0 0 0 0 1 
+state.send_route 0 1 0 0 0 0 0 0 0 0 0 1 
+state.send_end 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |routemanager|routemanager_fd:FD|tx_serial_hamming7x4:tx_serial_hamming7x4_inst|tx_serial_hamming7x4_uc:U1_UC|Eatual
+Name Eatual.final Eatual.transmissao Eatual.espera Eatual.preparacao Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 
+Eatual.preparacao 0 0 0 1 1 
+Eatual.espera 0 0 1 0 1 
+Eatual.transmissao 0 1 0 0 1 
+Eatual.final 1 0 0 0 1 
+
+State Machine - |routemanager|routemanager_fd:FD|rx_serial_hamming7x4:rx_serial_hamming7x4_inst|rx_serial_hamming7x4_uc:U1_UC|Eatual
+Name Eatual.final Eatual.espera Eatual.leitura Eatual.espera_primeiro Eatual.preparacao Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 0 
+Eatual.preparacao 0 0 0 0 1 1 
+Eatual.espera_primeiro 0 0 0 1 0 1 
+Eatual.leitura 0 0 1 0 0 1 
+Eatual.espera 0 1 0 0 0 1 
+Eatual.final 1 0 0 0 0 1 

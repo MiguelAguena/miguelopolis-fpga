@@ -1,0 +1,98 @@
+Restore Archived Project report for Miguelopolis
+Fri Dec  8 09:20:01 2023
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Fri Dec  8 09:20:01 2023 ;
+; Revision Name                   ; Miguelopolis                          ;
+; Top-level Entity Name           ; routemanager                          ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored '/home/miguelaguena/Downloads/Miguelopolisv0.7.qar' into the '/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/' directory
+Info: Generated report 'Miguelopolis.restore.rpt'
+Info (23030): Evaluation of Tcl script /opt/intelFPGA_lite/22.1std/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 578 megabytes
+    Info: Processing ended: Fri Dec  8 09:20:01 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
++--------------------------------------+
+; Files Restored                       ;
++--------------------------------------+
+; File Name                            ;
++--------------------------------------+
+; qar_info.json                        ;
+; Miguelopolis.qpf                     ;
+; Miguelopolis.qsf                     ;
+; Miguelopolis_assignment_defaults.qdf ;
+; assignment_defaults.qdf              ;
+; contador_m.vhd                       ;
+; deslocador_n.vhd                     ;
+; edge_detector.vhd                    ;
+; hexa7seg.vhd                         ;
+; ram.vhd                              ;
+; rom_branches.vhd                     ;
+; rom_data.vhd                         ;
+; rom_nodes.vhd                        ;
+; route_processor.vhd                  ;
+; route_ram.vhd                        ;
+; routemanager.vhd                     ;
+; routemanager_fd.vhd                  ;
+; routemanager_uc.vhd                  ;
+; rx_serial_hamming7x4.vhd             ;
+; rx_serial_hamming7x4_fd.vhd          ;
+; rx_serial_hamming7x4_uc.vhd          ;
+; tx_serial_hamming7x4.vhd             ;
+; tx_serial_hamming7x4_fd.vhd          ;
+; tx_serial_hamming7x4_uc.vhd          ;
++--------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+
