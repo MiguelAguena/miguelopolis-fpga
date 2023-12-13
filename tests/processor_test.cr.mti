@@ -1,0 +1,166 @@
+/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity routemanager
+-- Compiling architecture arch of routemanager
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rom_branches.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rom_branches.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity rom_branches
+-- Compiling architecture arch of rom_branches
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4_fd.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4_fd.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity rx_serial_hamming7x4_fd
+-- Compiling architecture arch of rx_serial_hamming7x4_fd
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/deslocador_n.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/deslocador_n.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity deslocador_n
+-- Compiling architecture deslocador_n_arch of deslocador_n
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/encoder_4x2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/encoder_4x2.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity encoder_4x2
+-- Compiling architecture arch of encoder_4x2
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/route_processor.vhd {2 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/route_processor.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity route_processor
+-- Compiling architecture arch of route_processor
+** Warning: /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/route_processor.vhd(90): (vcom-1013) Initial value of "s_cur_node" depends on value of signal "start_node".
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/contador_m.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/contador_m.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity contador_m
+-- Compiling architecture contador_m_arch of contador_m
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/edge_detector.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/edge_detector.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity edge_detector
+-- Compiling architecture Behavioral of edge_detector
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rom_nodes.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rom_nodes.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity rom_nodes
+-- Compiling architecture arch of rom_nodes
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4_fd.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4_fd.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tx_serial_hamming7x4_fd
+-- Compiling architecture tx_serial_7O1_fd_arch of tx_serial_hamming7x4_fd
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/ram.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/ram.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram
+-- Compiling architecture ram_1 of ram
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4_uc.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4_uc.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity rx_serial_hamming7x4_uc
+-- Compiling architecture arch of rx_serial_hamming7x4_uc
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager_fd.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager_fd.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity routemanager_fd
+-- Compiling architecture arch of routemanager_fd
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity rx_serial_hamming7x4
+-- Compiling architecture estrutural of rx_serial_hamming7x4
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/hexa7seg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/hexa7seg.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity hexa7seg
+-- Compiling architecture comportamental of hexa7seg
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/processor_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/processor_tb.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity processor_tb
+-- Compiling architecture arch of processor_tb
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4_uc.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4_uc.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tx_serial_hamming7x4_uc
+-- Compiling architecture tx_serial_uc_arch of tx_serial_hamming7x4_uc
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tx_serial_hamming7x4
+-- Compiling architecture tx_serial_7O1_arch of tx_serial_hamming7x4
+
+} {} {}} /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager_uc.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager_uc.vhd
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity routemanager_uc
+-- Compiling architecture arch of routemanager_uc
+
+} {} {}}

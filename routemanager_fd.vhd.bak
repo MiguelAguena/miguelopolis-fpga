@@ -1,0 +1,164 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity routemanager_fd is
+    generic (
+        MAX_ROUTE : integer := 64
+    );
+    port (
+        clock, reset : std_logic;
+        rx : in std_logic;
+        -- Saídas
+        tx : out std_logic;
+        -- UC controls in
+        nodeEn, routeEn, proStart, txErr, txRoute, txStart, txInitiate, proReset : in std_logic;
+        -- UC controls out
+        rxErr, rxReady, endRoute, proReady, txReady : out std_logic;
+        rxData : out std_logic_vector(3 downto 0)
+    );
+end routemanager_fd;
+
+architecture arch of routemanager_fd is
+
+    component rx_serial_hamming7x4 is
+        port (
+            clock : in std_logic;
+            reset : in std_logic;
+            dado_serial : in std_logic;
+            dado_recebido : out std_logic_vector(3 downto 0);
+            erro : out std_logic;
+            pronto_rx : out std_logic
+        );
+    end component;
+
+    component tx_serial_hamming7x4 is
+        port (
+            clock : in std_logic;
+            reset : in std_logic; -- sw0
+            partida : in std_logic; -- key0
+            dados_ascii : in std_logic_vector(3 downto 0); --sw9 ~sw3
+            saida_serial : out std_logic; -- gpio_0_d1 - b16
+            pronto : out std_logic; -- led9
+            db_estado : out std_logic_vector(6 downto 0) --hex5
+        );
+    end component;
+
+    component route_processor is
+        port (
+            clock, reset, fullreset, enable : in std_logic;
+            data_ram_directions : in std_logic_vector(3 downto 0);
+            addr_ram_directions : out std_logic_vector(5 downto 0);
+            directions_amount : in std_logic_vector(5 downto 0);
+            stack_addr : in std_logic_vector(5 downto 0);
+            stack_o : out std_logic_vector(3 downto 0);
+            stack_amount : out std_logic_vector(5 downto 0);
+            start_node : in std_logic_vector(3 downto 0);
+            ready : out std_logic
+        );
+    end component;
+
+    signal rpStart, rpReady, s_endRoute : std_logic := '0';
+	 
+	 signal s_rxReady, s_txReady : std_logic;
+
+    signal s_rxData, startNode, txData : std_logic_vector(3 downto 0) := "0000";
+
+    type routeReg is array (0 to MAX_ROUTE - 1) of std_logic_vector(3 downto 0);
+    signal routeIn : routeReg;
+    signal stackOut : std_logic_vector(3 downto 0);
+    signal route_addr, s_stack_amount : std_logic_vector(5 downto 0);
+    signal curRoute_rx, curRoute_tx : integer range 0 to MAX_ROUTE - 1 := 0;
+
+    signal s_comp_routeIn : std_logic_vector(3 downto 0);
+    signal s_comp_curRoute_rx : std_logic_vector(3 downto 0);
+    signal s_comp_curRoute_tx : std_logic_vector(3 downto 0);
+begin
+    s_comp_routeIn <= routeIn(to_integer(unsigned(route_addr)));
+    s_comp_curRoute_rx <= std_logic_vector(to_unsigned(curRoute_rx, 6))
+    s_comp_curRoute_tx <= std_logic_vector(to_unsigned(curRoute_tx, 6))
+
+    rx_serial_hamming7x4_inst : rx_serial_hamming7x4
+    port map(
+        clock => clock,
+        reset => reset,
+        dado_serial => rx,
+        dado_recebido => s_rxData,
+        erro => rxErr,
+        pronto_rx => s_rxReady
+    );
+    -- Register for Start Node
+    nodeReg : process (clock)
+    begin
+        if rising_edge(clock) then
+            if reset = '1' then
+                startNode <= "0000";
+            elsif nodeEn = '1' then
+                startNode <= s_rxData;
+            end if;
+        end if;
+    end process;
+
+    -- generate register queue for route
+
+    routeRegGen : process (clock)
+    begin
+        if rising_edge(clock) then
+            if reset = '1' then
+                routeIn <= (others => "0000");
+                s_endRoute <= '0';
+                curRoute_rx <= 0;
+                curRoute_tx <= 0;
+            elsif (proReset = '1') then
+                curRoute_rx <= 0;
+                curRoute_tx <= 0;
+            elsif (routeEn = '1' and s_rxReady = '1') then
+                routeIn(curRoute_rx) <= s_rxData;
+                curRoute_rx <= curRoute_rx + 1;
+            elsif (txInitiate = '1' and s_txReady = '1' and curRoute_tx < (to_integer(unsigned(s_stack_amount)))) then
+                curRoute_tx <= curRoute_tx + 1;
+            elsif (curRoute_tx = (to_integer(unsigned(s_stack_amount)))) then
+                s_endRoute <= '1';
+            end if;
+        end if;
+    end process;
+
+    -- route processor
+    rpInst : route_processor
+    port map (
+        clock => clock,
+        reset => proReset,
+        fullreset => reset,
+        enable => proStart,
+        data_ram_directions => s_comp_routeIn,
+        addr_ram_directions => route_addr,
+        directions_amount => s_comp_curRoute_rx,
+        stack_addr => s_comp_curRoute_tx,
+        stack_o => stackOut,
+        stack_amount => s_stack_amount,
+        start_node => startNode,
+        ready => proReady
+    );
+
+    txData <= "0000" WHEN txStart = '1' else
+              "1010" when txErr = '1' else
+              stackOut when txRoute = '1' else
+              "0000";
+
+    -- tx
+    tx_serial_hamming7x4_inst : tx_serial_hamming7x4 port map(
+        clock => clock,
+        reset => reset,
+        partida => txInitiate,
+        dados_ascii => txData,
+        saida_serial => tx,
+        pronto => s_txReady,
+        db_estado => open
+    );
+	 
+	 rxData <= s_rxData;
+    endRoute <= s_endRoute;
+	 
+	 rxReady <= s_rxReady;
+	 txReady <= s_txReady;
+end arch; -- arch

@@ -1,0 +1,84 @@
+entity routemanager is
+    port (
+        clock, reset : std_logic;
+        rx : in std_logic;
+        -- Saídas
+        tx : out std_logic;
+    );
+end routemanager;
+
+architecture arch of routemanager is
+    component routemanager_fd is
+        generic (
+            MAX_ROUTE : integer := 64
+        );
+        port (
+            clock, reset : std_logic;
+            rx : in std_logic;
+            -- Saídas
+            tx : out std_logic;
+            -- UC controls in
+            carEn, routeEn, proStart, txSrcCar, txErr, txStart : in std_logic;
+            -- UC controls out
+            rxErr, rxReady, endRoute, proeReady, txReady : out std_logic;
+            rxData : out std_logic_vector(3 downto 0)
+        );
+    end component routemanager_fd;
+
+    component routemanager_uc is
+        port (
+            clock, reset : std_logic;
+            rx : in std_logic;
+            -- Saídas
+            tx : out std_logic;
+            -- UC controls in
+            rxReady, endRoute, proReady, txReady : in std_logic
+            rxData : in std_logic_vector(3 downto 0);
+            -- UC controls out
+            carEn, routeEn, proStart, txSrcCar, rxErr, txStart : out std_logic;
+        );
+    end component routemanager_uc;
+
+    signal s_carEn, s_routeEn, s_proStart, s_txSrcCar, s_txErr, s_txStart : std_logic;
+    signal s_rxErr, s_rxReady, s_endRoute, s_proReady, s_txReady : std_logic;
+    signal s_rxData : std_logic_vector(3 downto 0);
+begin
+    FD : routemanager_fd
+    port map(
+        clock => clock,
+        reset => reset,
+        rx => rx,
+        tx => tx,
+        carEn => s_carEn,
+        routeEn => s_routeEn,
+        proStart => s_proStart,
+        txSrcCar => s_txSrcCar,
+        txErr => s_txErr,
+        txStart => s_txStart,
+        rxErr => s_rxErr,
+        rxReady => s_rxReady,
+        endRoute => s_endRoute,
+        proeReady => s_proReady,
+        txReady => s_txReady,
+        rxData => s_rxData
+    );
+
+    UC : routemanager_uc
+    port map(
+        clock => clock,
+        reset => reset,
+        rx => rx,
+        tx => tx,
+        rxReady => s_rxReady,
+        endRoute => s_endRoute,
+        proReady => s_proReady,
+        txReady => s_txReady,
+        rxData => s_rxData,
+        carEn => s_carEn,
+        routeEn => s_routeEn,
+        proStart => s_proStart,
+        txSrcCar => s_txSrcCar,
+        rxErr => s_rxErr,
+        txStart => s_txStart
+    );
+end arch; -- arch

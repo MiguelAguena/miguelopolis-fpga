@@ -1,0 +1,836 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/miguelaguena/Documents/riscv-pipeline/pipe/modelsim
+T_opt
+!s110 1702416067
+VX2<b@???NFm`R6?h5LJel0
+04 12 4 work processor_tb arch 1
+=24-000ae431a4f1-6578cec2-d510f-3d9d
+!s124 OEM10U8 
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+R1
+Econtador_m
+Z2 w1698808306
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 287
+Z6 d/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tests
+Z7 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/contador_m.vhd
+Z8 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/contador_m.vhd
+l0
+Z9 L24 1
+V1KdgKX^N^lRc8HW3f:1K61
+!s100 FXKGl>fh4hdO]FVoolMca1
+Z10 OL;C;2021.2;73
+32
+Z11 !s110 1702416086
+!i10b 1
+Z12 !s108 1702416086.000000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/contador_m.vhd|
+Z14 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/contador_m.vhd|
+!i113 0
+Z15 o-work work -2002 -explicit
+Z16 tExplicit 1 CvgOpt 0
+Acontador_m_arch
+R3
+R4
+R5
+DEx4 work 10 contador_m 0 22 1KdgKX^N^lRc8HW3f:1K61
+!i122 287
+l41
+L39 29
+VKG=f3ef5ZKnbndMJ>NVEE2
+!s100 biTU27[D3X0zWUK5YHzTF0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Edeslocador_n
+Z17 w1698808333
+R4
+R5
+!i122 288
+R6
+Z18 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/deslocador_n.vhd
+Z19 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/deslocador_n.vhd
+l0
+L19 1
+VConaa>]eS6jB1czMo>B:31
+!s100 aMlkXhB?@eRk=A_n9]onN0
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/deslocador_n.vhd|
+Z21 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/deslocador_n.vhd|
+!i113 0
+R15
+R16
+Adeslocador_n_arch
+R4
+R5
+DEx4 work 12 deslocador_n 0 22 Conaa>]eS6jB1czMo>B:31
+!i122 288
+l38
+L34 19
+VGhj8>1B[=o8_T6]ofX2oW2
+!s100 @kNG4@9Om<63==9`GmmE[2
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 0
+R15
+R16
+Eedge_detector
+Z22 w1698808361
+R4
+R5
+!i122 289
+R6
+Z23 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/edge_detector.vhd
+Z24 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/edge_detector.vhd
+l0
+Z25 L22 1
+VNTKH7zAH]@:E]ba]f<J5G1
+!s100 L`O[OR4SU<oL=_PXLh0NM2
+R10
+32
+R11
+!i10b 1
+R12
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/edge_detector.vhd|
+Z27 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/edge_detector.vhd|
+!i113 0
+R15
+R16
+Abehavioral
+R4
+R5
+DEx4 work 13 edge_detector 0 22 NTKH7zAH]@:E]ba]f<J5G1
+!i122 289
+l32
+L30 13
+V<a]Qfz5T8CbD_Ja=h6A;T3
+!s100 ]Pz0>OTaUcTKZjC[2C8K03
+R10
+32
+R11
+!i10b 1
+R12
+R26
+R27
+!i113 0
+R15
+R16
+Eencoder_4x2
+Z28 w1702349089
+R3
+R4
+R5
+!i122 290
+R6
+Z29 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/encoder_4x2.vhd
+Z30 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/encoder_4x2.vhd
+l0
+L5 1
+VeMUba^0QHRC8WXQbj^jQD3
+!s100 VVLbjA;4M:E]mzO2Q4WH[0
+R10
+32
+R11
+!i10b 1
+R12
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/encoder_4x2.vhd|
+Z32 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/encoder_4x2.vhd|
+!i113 0
+R15
+R16
+Aarch
+R3
+R4
+R5
+DEx4 work 11 encoder_4x2 0 22 eMUba^0QHRC8WXQbj^jQD3
+!i122 290
+l13
+L12 12
+VNjQIBN7ZZ2INfj`ioHOd]0
+!s100 67cHP@5W6La<18Gc[G91=1
+R10
+32
+R11
+!i10b 1
+R12
+R31
+R32
+!i113 0
+R15
+R16
+Ehexa7seg
+Z33 w1698808346
+R4
+R5
+!i122 291
+R6
+Z34 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/hexa7seg.vhd
+Z35 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/hexa7seg.vhd
+l0
+L25 1
+VXJ9HGzYP0O46D:R7RP5WF1
+!s100 a9@;IIjI_jYmL??OVGhNG3
+R10
+32
+R11
+!i10b 1
+R12
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/hexa7seg.vhd|
+Z37 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/hexa7seg.vhd|
+!i113 0
+R15
+R16
+Acomportamental
+R4
+R5
+DEx4 work 8 hexa7seg 0 22 XJ9HGzYP0O46D:R7RP5WF1
+!i122 291
+l33
+L32 22
+VOeb>2L1R]:D_9nf_Hlan?1
+!s100 2OJAX6gn>PTdznT78mSSP0
+R10
+32
+R11
+!i10b 1
+R12
+R36
+R37
+!i113 0
+R15
+R16
+Eprocessor_tb
+Z38 w1702412489
+R3
+R4
+R5
+!i122 292
+R6
+Z39 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/processor_tb.vhd
+Z40 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/processor_tb.vhd
+l0
+L5 1
+VCNDoC<;BU3=9WD^aY[l982
+!s100 ;Gl7kJHZON4IXoUV<2z6D1
+R10
+32
+Z41 !s110 1702416087
+!i10b 1
+R12
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/processor_tb.vhd|
+Z43 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/processor_tb.vhd|
+!i113 0
+R15
+R16
+Aarch
+R3
+R4
+R5
+DEx4 work 12 processor_tb 0 22 CNDoC<;BU3=9WD^aY[l982
+!i122 292
+l49
+L8 89
+V2kHb>Se=bWN<MR`G3Z72U0
+!s100 VlP3UlL6E3<2<ZGM[beeS3
+R10
+32
+R41
+!i10b 1
+R12
+R42
+R43
+!i113 0
+R15
+R16
+Eram
+Z44 w1702086933
+R3
+R4
+R5
+!i122 293
+R6
+Z45 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/ram.vhd
+Z46 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/ram.vhd
+l0
+L5 1
+V97kG1i2mHINb81HCkeQL30
+!s100 Q1hf_H^6dd2ee;>fU9bVH2
+R10
+32
+R41
+!i10b 1
+Z47 !s108 1702416087.000000
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/ram.vhd|
+Z49 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/ram.vhd|
+!i113 0
+R15
+R16
+Aram_1
+R3
+R4
+R5
+DEx4 work 3 ram 0 22 97kG1i2mHINb81HCkeQL30
+!i122 293
+l24
+L20 18
+V6;U>AjFKg4@0I@O7ZHl5Z1
+!s100 ;S2no>c<dbIcgUgCnO@372
+R10
+32
+R41
+!i10b 1
+R47
+R48
+R49
+!i113 0
+R15
+R16
+Erom_branches
+Z50 w1702345991
+R3
+R4
+R5
+!i122 294
+R6
+Z51 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rom_branches.vhd
+Z52 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rom_branches.vhd
+l0
+L5 1
+V`:kIn9TF95Hfck3IR3mO_1
+!s100 8H<Rb28H4=nm<J]>?Xnjb1
+R10
+32
+R41
+!i10b 1
+R47
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rom_branches.vhd|
+Z54 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rom_branches.vhd|
+!i113 0
+R15
+R16
+Aarch
+R3
+R4
+R5
+DEx4 work 12 rom_branches 0 22 `:kIn9TF95Hfck3IR3mO_1
+!i122 294
+l35
+L12 28
+V`kT?;7GO6iD:1BHYlbo^<2
+!s100 X1DV=R6UKe8zN0_74MWYj0
+R10
+32
+R41
+!i10b 1
+R47
+R53
+R54
+!i113 0
+R15
+R16
+Erom_nodes
+Z55 w1702348700
+R3
+R4
+R5
+!i122 295
+R6
+Z56 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rom_nodes.vhd
+Z57 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rom_nodes.vhd
+l0
+L5 1
+V9M39`l4=oNFlgI><^eI?73
+!s100 nzlTdVfj4;<M;UaUUoRb61
+R10
+32
+R41
+!i10b 1
+R47
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rom_nodes.vhd|
+Z59 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rom_nodes.vhd|
+!i113 0
+R15
+R16
+Aarch
+R3
+R4
+R5
+DEx4 work 9 rom_nodes 0 22 9M39`l4=oNFlgI><^eI?73
+!i122 295
+l32
+L12 25
+VKQ2E83gzKPl`:SYkOKjR51
+!s100 ^ROWZ6P_Be?ANeKl?=48h2
+R10
+32
+R41
+!i10b 1
+R47
+R58
+R59
+!i113 0
+R15
+R16
+Eroute_processor
+Z60 w1702416053
+R3
+R4
+R5
+!i122 296
+R6
+Z61 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/route_processor.vhd
+Z62 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/route_processor.vhd
+l0
+L5 1
+V5:gZOEZHjkL14d<;k7=kA0
+!s100 <e7m3`;nn3dL^=EJBJHl11
+R10
+32
+R41
+!i10b 1
+R47
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/route_processor.vhd|
+Z64 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/route_processor.vhd|
+!i113 0
+R15
+R16
+Aarch
+R3
+R4
+R5
+DEx4 work 15 route_processor 0 22 5:gZOEZHjkL14d<;k7=kA0
+!i122 296
+l110
+L19 308
+V?XKJBkSjPQ>8BPQz;@LNo2
+!s100 0gg_IO]B3dkAXY]:zCn_n2
+R10
+32
+R41
+!i10b 1
+R47
+R63
+R64
+!i113 0
+R15
+R16
+Eroutemanager
+Z65 w1702323685
+R3
+R4
+R5
+!i122 297
+R6
+Z66 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager.vhd
+Z67 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager.vhd
+l0
+L5 1
+Ve6PhAZQ_mR^>8bT^`4JCc1
+!s100 Zobh46zW89O5aPaEGA;h52
+R10
+32
+R41
+!i10b 1
+R47
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager.vhd|
+Z69 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager.vhd|
+!i113 0
+R15
+R16
+Aarch
+R3
+R4
+R5
+DEx4 work 12 routemanager 0 22 e6PhAZQ_mR^>8bT^`4JCc1
+!i122 297
+l47
+L14 75
+VZMHTlb7LE0[]E9<i<n?JP0
+!s100 RDhiAH_6IeD^M4DQCP;@m1
+R10
+32
+R41
+!i10b 1
+R47
+R68
+R69
+!i113 0
+R15
+R16
+Eroutemanager_fd
+Z70 w1702410461
+R3
+R4
+R5
+!i122 298
+R6
+Z71 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager_fd.vhd
+Z72 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager_fd.vhd
+l0
+L5 1
+V6FlKiUF6R3hhDm68hkz2@3
+!s100 fQ=]V002Me@=JYc9_V7OS2
+R10
+32
+R41
+!i10b 1
+R47
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager_fd.vhd|
+Z74 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager_fd.vhd|
+!i113 0
+R15
+R16
+Aarch
+R3
+R4
+R5
+DEx4 work 15 routemanager_fd 0 22 6FlKiUF6R3hhDm68hkz2@3
+!i122 298
+l76
+L22 143
+VH2`dX=7z@=zEBmQ3lf8om3
+!s100 k7SGnhM6hEfZ2QT<`g>oA1
+R10
+32
+R41
+!i10b 1
+R47
+R73
+R74
+!i113 0
+R15
+R16
+Eroutemanager_uc
+Z75 w1702323618
+R3
+R4
+R5
+!i122 299
+R6
+Z76 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager_uc.vhd
+Z77 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager_uc.vhd
+l0
+L5 1
+VVg1fD_SkRY@XQ:JCin:W@3
+!s100 UT3OjRU4@i^6i4Y8aV?=U1
+R10
+32
+R41
+!i10b 1
+R47
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager_uc.vhd|
+Z79 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/routemanager_uc.vhd|
+!i113 0
+R15
+R16
+Aarch
+R3
+R4
+R5
+DEx4 work 15 routemanager_uc 0 22 Vg1fD_SkRY@XQ:JCin:W@3
+!i122 299
+l22
+L17 51
+VX^Oz?[e`BdXA=d7=@RACN2
+!s100 NDYgYjka[ojGKe2]2m<:m1
+R10
+32
+R41
+!i10b 1
+R47
+R78
+R79
+!i113 0
+R15
+R16
+Erx_serial_hamming7x4
+Z80 w1701875000
+R3
+R4
+R5
+!i122 300
+R6
+Z81 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4.vhd
+Z82 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4.vhd
+l0
+L6 1
+VfN<PnaS5>c?bQNWf0;EH33
+!s100 L^`T_AmTXA=^kTTCJ?KSY2
+R10
+32
+R41
+!i10b 1
+R47
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4.vhd|
+Z84 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4.vhd|
+!i113 0
+R15
+R16
+Aestrutural
+R3
+R4
+R5
+DEx4 work 20 rx_serial_hamming7x4 0 22 fN<PnaS5>c?bQNWf0;EH33
+!i122 300
+l82
+L18 138
+V2GFoKUZbFAcMCQQD=^;;N2
+!s100 L5Rl?La<<]8e[jC]@fWZ51
+R10
+32
+R41
+!i10b 1
+R47
+R83
+R84
+!i113 0
+R15
+R16
+Erx_serial_hamming7x4_fd
+Z85 w1699317543
+R4
+R5
+!i122 301
+R6
+Z86 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4_fd.vhd
+Z87 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4_fd.vhd
+l0
+L4 1
+Vn6FJ^jHhD4C3InN8AjToT3
+!s100 :7[Bd5oVciEEVi<2eYU=X1
+R10
+32
+R41
+!i10b 1
+R47
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4_fd.vhd|
+Z89 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4_fd.vhd|
+!i113 0
+R15
+R16
+Aarch
+R4
+R5
+DEx4 work 23 rx_serial_hamming7x4_fd 0 22 n6FJ^jHhD4C3InN8AjToT3
+!i122 301
+l58
+L20 95
+ViHV60NNHTdHM>?KcVbHNf3
+!s100 FH]@Y8C^Q@@n8b^hX;:2d1
+R10
+32
+R41
+!i10b 1
+R47
+R88
+R89
+!i113 0
+R15
+R16
+Erx_serial_hamming7x4_uc
+Z90 w1700660440
+R4
+R5
+!i122 302
+R6
+Z91 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4_uc.vhd
+Z92 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4_uc.vhd
+l0
+L5 1
+Vlo8T7Mg7MQm]]UDi9FS@W1
+!s100 50nDR8LA6<z^nJ5o^3H1:1
+R10
+32
+R41
+!i10b 1
+R47
+Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4_uc.vhd|
+Z94 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/rx_serial_hamming7x4_uc.vhd|
+!i113 0
+R15
+R16
+Aarch
+R4
+R5
+DEx4 work 23 rx_serial_hamming7x4_uc 0 22 lo8T7Mg7MQm]]UDi9FS@W1
+!i122 302
+l30
+L24 54
+VCSWGN5k^Gkd3nTS[=Q9?o2
+!s100 XRYmd2CZ`Whgz]BGd0gnG0
+R10
+32
+R41
+!i10b 1
+R47
+R93
+R94
+!i113 0
+R15
+R16
+Etx_serial_hamming7x4
+Z95 w1699295384
+R3
+R4
+R5
+!i122 303
+R6
+Z96 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4.vhd
+Z97 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4.vhd
+l0
+R9
+V=gz5ZdI94_LP7Pho>CiSf0
+!s100 nnDS^:KEJ4H?d:KcNzZTV3
+R10
+32
+R41
+!i10b 1
+R47
+Z98 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4.vhd|
+Z99 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4.vhd|
+!i113 0
+R15
+R16
+Atx_serial_7o1_arch
+R3
+R4
+R5
+DEx4 work 20 tx_serial_hamming7x4 0 22 =gz5ZdI94_LP7Pho>CiSf0
+!i122 303
+l107
+L40 146
+VjGmTbK5`KP7@ioVOC=8f70
+!s100 77Qj@j_RMnSmE1TmkgCOE0
+R10
+32
+R41
+!i10b 1
+R47
+R98
+R99
+!i113 0
+R15
+R16
+Etx_serial_hamming7x4_fd
+Z100 w1699292044
+R4
+R5
+!i122 304
+R6
+Z101 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4_fd.vhd
+Z102 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4_fd.vhd
+l0
+R25
+VEYQ`7?hl_KU;=e4@_5j<:0
+!s100 Z2CZdF9n;R1[>=ZDbaDfk1
+R10
+32
+R41
+!i10b 1
+R47
+Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4_fd.vhd|
+Z104 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4_fd.vhd|
+!i113 0
+R15
+R16
+Atx_serial_7o1_fd_arch
+R4
+R5
+DEx4 work 23 tx_serial_hamming7x4_fd 0 22 EYQ`7?hl_KU;=e4@_5j<:0
+!i122 304
+l70
+L36 80
+VC:H=jX>Q8fdkE5G2`SUlB0
+!s100 3AelIV5LU7J9kj`5oQB[J1
+R10
+32
+R41
+!i10b 1
+R47
+R103
+R104
+!i113 0
+R15
+R16
+Etx_serial_hamming7x4_uc
+Z105 w1698808119
+R4
+R5
+!i122 305
+R6
+Z106 8/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4_uc.vhd
+Z107 F/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4_uc.vhd
+l0
+L20 1
+VMTQJE6^`F7IbdOAWF]MTz1
+!s100 MhUf8K[l]I8C9U51jEDg;2
+R10
+32
+R41
+!i10b 1
+R47
+Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4_uc.vhd|
+Z109 !s107 /home/miguelaguena/Downloads/Miguelopolisv0.7_restored/tx_serial_hamming7x4_uc.vhd|
+!i113 0
+R15
+R16
+Atx_serial_uc_arch
+R4
+R5
+Z110 DEx4 work 23 tx_serial_hamming7x4_uc 0 22 MTQJE6^`F7IbdOAWF]MTz1
+!i122 305
+l42
+Z111 L36 72
+Z112 VoDb_6l9_38gzjZRR^lA`@3
+Z113 !s100 6O=XimcVo:2W3F4<US86o3
+R10
+32
+R41
+!i10b 1
+R47
+R108
+R109
+!i113 0
+R15
+R16

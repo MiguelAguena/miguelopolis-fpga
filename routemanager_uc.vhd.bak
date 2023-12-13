@@ -1,0 +1,57 @@
+entity routemanager_uc is
+    port (
+        clock, reset : std_logic;
+        rx : in std_logic;
+        -- Saídas
+        tx : out std_logic;
+        -- UC controls in
+        rxReady, endRoute, proReady, txReady : in std_logic
+        rxData : in std_logic_vector(3 downto 0);
+        -- UC controls out
+        carEn, routeEn, proStart, txSrcCar, rxErr, txStart : out std_logic;
+    );
+end routemanager_uc;
+
+architecture arch of routemanager_uc is
+    -- enum type for state
+    type state_type is (waiting, wait_car, write_car, wait_dir, write_dir, send_err, process_route, send_car, send_route);
+    signal state, nextState : state_type;
+
+begin
+    mainPro : process (clock)
+    begin
+        if (rising_edge(clock)) then
+            if (reset = '1') then
+                state <= waiting;
+            else
+                state <= nextState;
+            end if;
+        end if;
+    end process;
+
+    nextState <=
+    wait_car when state = waiting and rxReady = '1' and rxData = "0000" else
+    write_car when state = wait_car and rxReady = '1' else
+    wait_dir when state = write_car or state = write_dir else
+    send_err when state = wait_dir and rxReady = '1' and rxErr = '1' else
+    write_dir when state = wait_dir and rxReady = '1' and rxData ! = "0000" else
+    process_route when state = write_dir and rxReady = '1' and rxData = "0000" else
+    send_car when state = process_route and proReady = '1' else
+    send_route when state = send_car and txReady = '1' else
+    waiting when state = send_route and endRoute = '1' else
+    state;
+
+    carEn <= '1' when state = write_car else
+             '0';
+    routeEn <= '1' when state = write_dir else
+               '0';
+    proStart <= '1' when state = process_route else
+                '0';
+    txSrcCar <= '1' when state = send_car else
+                '0';
+    txErr <= '1' when state = send_err else
+             '0';
+    txStart <= '1' when state = send_route else
+               '0';
+
+end architecture;

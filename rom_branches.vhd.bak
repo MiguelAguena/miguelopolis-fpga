@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity rom_branches is
+    port (
+        endereco : in std_logic_vector(5 downto 0);
+        dado_saida : out std_logic_vector(9 downto 0)
+    );
+end entity rom_branches;
+
+architecture arch of rom_branches is
+    type t_mem is array(63 downto 0) of std_logic_vector(9 downto 0);
+
+    constant mem : t_mem := (others => "00000_00000");
+
+begin
+    -- saida da memoria
+    dado_saida <= mem(to_integer(unsigned(endereco)));
+
+end architecture arch;
